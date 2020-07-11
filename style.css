@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fondamento', cursive;
+    
+    font-size: 14px;
+    color: rgb(27, 25, 26);
+    background-color: rgb(250, 218, 245);
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(168, 99, 133);
+    color: white;
+    cursor: pointer;
+    transition: 500ms ;
+}
+
+button:hover {
+    color: rgb(201, 129, 153);
+    background-color: rgb(218, 180, 205);
+}
+
+
+/* Container
+=============*/
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+ }
+
+
+/* Header
+=============*/
+
+.header {
+   width: 100%;
+   height: 80px;
+}
+
+.header .container {
+    margin: 0 auto;
+    padding: 0 40px;
+    border-bottom: 1px solid rgb(170, 64, 99);
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Nav
+=============*/
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: rgb(194, 23, 80);
+    opacity: 0.85;
+    transition: opacity 3ms linear;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+
+/* Intro
+=============*/
+
+.intro {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("kids2.png.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.intro__inner {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.intro__title {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 75px;
+    line-height: 1.1;
+    color: rgb(41, 15, 20);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Features
+=============*/
+
+.features {
+    display: flex;
+    margin: 90px 0;
+}
+
+.features__item {
+    width: 33.333333%;
+    padding: 0  20px;
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 10px;
+}
+
+.features__title {
+    margin-bottom: 15px;
+    color: rgb(104, 43, 101);
+    font-weight: 700;
+}
+
+.features__text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(65, 18, 65);
+}
+
+
+/* Works
+=============*/
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    width: 20%;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(65, 18, 65);
+    text-transform: uppercase;
+}
+
+.work__image_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work__image_wrapper img {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+
+/* Footer
+=============*/
+
+.main-footer {
+    border-top: 2px rgb(159, 72, 185);
+}
+.main-footer .copyright {
+    text-align: center;
+    color: rgba(119, 36, 108, 0.867);
+}
+
+
+/*Dresses item
+===============*/
+
+.dresses-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .dresses__body {
+    margin: 0 10px;
+    background-image: url(dressesbody.png.jpg);
+    background-size: 130% 130%;
+  }
+
+  .dresses-list div {
+      margin: 15px;
+      text-align: center;
+      background-color: rgb(247, 231, 246);
+  }
+
+  .dresses__title {
+    margin-bottom: 15px;
+    color: rgb(36, 21, 35);
+    font-weight: 200;
+    font-size: 35px;
+    line-height: 1;
+
+  }
+
+ 
+
+  .hero__name {
+    width: 500px;
+    padding: 10px ;
+    margin: 20px;
+    left: 35%;
+    color: rgb(29, 18, 28);
+    background-color: rgb(231, 208, 221);
+    font-size: 40px;
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
+
+    /* Order
+    ===============*/
+
+    .order__body {
+        margin: 0 10px;
+        background-image: url(bodyorder.png.jpg);
+        background-size: 130% 130%;
+    }
+    
+
+        /* Ddd-genius-form
+    ===============*/
+
+    .add-genius {
+        width: 50%;
+        min-width: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 150px auto 40px;
+    }
+
+    .add-genius .submit-btn {
+        align-self: flex-end;
+    }
+    
+    .input-label {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+ 
